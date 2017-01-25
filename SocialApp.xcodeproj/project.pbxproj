@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		54D8E52C49D54FC91D94DAED /* Pods_SocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF04E2544342507EB18EFCE /* Pods_SocialApp.framework */; };
+		C45885FD1E3955E300F86F86 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45885FC1E3955E300F86F86 /* FancyView.swift */; };
+		C45886001E39567300F86F86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45885FF1E39567300F86F86 /* Constants.swift */; };
+		C45886021E39587300F86F86 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45886011E39587300F86F86 /* RoundButton.swift */; };
+		C45886041E395A4500F86F86 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45886031E395A4500F86F86 /* FancyField.swift */; };
+		C45886061E395B7700F86F86 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45886051E395B7700F86F86 /* FancyButton.swift */; };
 		C4646E691E392EE2001F2256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4646E681E392EE2001F2256 /* AppDelegate.swift */; };
 		C4646E6B1E392EE2001F2256 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4646E6A1E392EE2001F2256 /* SignInVC.swift */; };
 		C4646E6E1E392EE2001F2256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4646E6C1E392EE2001F2256 /* Main.storyboard */; };
@@ -38,6 +43,11 @@
 /* Begin PBXFileReference section */
 		6C86469C1C8D5C0AA8D4DADF /* Pods-SocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp.release.xcconfig"; sourceTree = "<group>"; };
 		9486AF9F338073CF3BAFD349 /* Pods-SocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C45885FC1E3955E300F86F86 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		C45885FF1E39567300F86F86 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C45886011E39587300F86F86 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		C45886031E395A4500F86F86 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		C45886051E395B7700F86F86 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		C4646E651E392EE2001F2256 /* SocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4646E681E392EE2001F2256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4646E6A1E392EE2001F2256 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -98,6 +108,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C45885FE1E39566500F86F86 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C45885FF1E39567300F86F86 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		C4646E5C1E392EE1001F2256 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +141,7 @@
 		C4646E671E392EE2001F2256 /* SocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				C45885FE1E39566500F86F86 /* Util */,
 				C4646E981E39396A001F2256 /* Model */,
 				C4646E991E393970001F2256 /* View */,
 				C4646E9A1E393977001F2256 /* Controller */,
@@ -164,6 +183,10 @@
 		C4646E991E393970001F2256 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C45885FC1E3955E300F86F86 /* FancyView.swift */,
+				C45886011E39587300F86F86 /* RoundButton.swift */,
+				C45886031E395A4500F86F86 /* FancyField.swift */,
+				C45886051E395B7700F86F86 /* FancyButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -365,8 +388,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45886041E395A4500F86F86 /* FancyField.swift in Sources */,
 				C4646E6B1E392EE2001F2256 /* SignInVC.swift in Sources */,
+				C45886021E39587300F86F86 /* RoundButton.swift in Sources */,
+				C45886061E395B7700F86F86 /* FancyButton.swift in Sources */,
 				C4646E691E392EE2001F2256 /* AppDelegate.swift in Sources */,
+				C45885FD1E3955E300F86F86 /* FancyView.swift in Sources */,
+				C45886001E39567300F86F86 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

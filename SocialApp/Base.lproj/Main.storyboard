@@ -72,6 +72,9 @@
                                     <constraint firstAttribute="height" constant="150" id="Xnd-B8-pd5"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogC-HG-BMs"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-dl-lav" customClass="FancyField" customModule="SocialApp" customModuleProvider="target">
                                 <rect key="frame" x="35" y="372" width="306" height="30"/>
